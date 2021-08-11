@@ -1,3 +1,6 @@
+Full-React-Course by freeCodeCamp.org (learning fundamentals, hooks, context API, react router, custom hooks). Still under the process. 
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
