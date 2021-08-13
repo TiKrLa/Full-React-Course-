@@ -1,20 +1,29 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
-// JSX Rules
-// return single element 
-// div / section / article for Fragment 
-// use camelCase for html attribute
-// className instead of class
-// close every element
-// formatting
+// Nested Components, React Tools 
 
-function Greeting() {
+function BookList() {
  return (
-  <div>
-    <h1>hello world</h1>
-   </div>
- );
+  <section>
+    <Book />
+  </section>
+  );
  }
 
-ReactDom.render(<Greeting />, document.getElementById('root'));
+ const Book = () => {
+  return (
+    <article>
+      <Image></Image>
+    </article>
+    );
+ };
+ const Image = () => (
+  <img 
+    src='https://images-na.ssl-images-amazon.com/images/I/81GqtNbs%2BPL._AC_UL200_SR200,200_.jpg'
+    alt=''
+  />
+ );
+
+ReactDom.render(<BookList/>, document.getElementById('root')
+);
