@@ -1,11 +1,18 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
-// Nested Components, React Tools 
 
+// CSS
+import './index.css';
 function BookList() {
  return (
-  <section>
+  <section className='booklist'>
+    <Book />
+    <Book />
+    <Book />
+    <Book />
+    <Book />
+    <Book />
     <Book />
   </section>
   );
@@ -13,8 +20,10 @@ function BookList() {
 
  const Book = () => {
   return (
-    <article>
+    <article className='book'>
       <Image></Image>
+      <Title />
+      <Author />
     </article>
     );
  };
@@ -25,5 +34,7 @@ function BookList() {
   />
  );
 
+ const Title = () => <h1>Billy Summers</h1>
+ const Author = () => <h4 style={{color: '#617d98', fontSize:'0.75rem', marginTop:'0.25rem' }}>Stephen King, Paul Sparks</h4>
 ReactDom.render(<BookList/>, document.getElementById('root')
 );
