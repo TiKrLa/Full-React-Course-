@@ -1,0 +1,28 @@
+import React, { useState, useEffect } from 'react';
+const url = 'https://api.github.com/users/QuincyLarson';
+const MultipleReturns = () => {
+  return <h2>multiple returns</h2>;
+};
+
+export default MultipleReturns;
+
+import React, { useState } from 'react';
+// short-circuit evaluation
+// ternary operator
+
+const ShortCircuit = () => {
+  // const firstValue = text || 'hello world';
+  // const secondValue = text && 'hello world';
+
+  return <h2>short circuit</h2>;
+};
+
+export default ShortCircuit;
+
+import React, { useState, useEffect } from 'react';
+
+const ShowHide = () => {
+  return <h2>show/hide</h2>;
+};
+
+export default ShowHide;
