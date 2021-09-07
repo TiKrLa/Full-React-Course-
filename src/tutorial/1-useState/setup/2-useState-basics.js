@@ -1,16 +1,3 @@
-import React from 'react';
-
-const ErrorExample = () => {
-  
-  return (
-  <React.Fragment>
-    <h2>UseState Error Example</h2>
-  </React.Fragment>
-  );
-};
-
-export default ErrorExample;
-
 import React, { useState } from 'react';
 // use
 // component name must be uppercase
@@ -42,28 +29,3 @@ const UseStateBasics = () => {
 };
 
 export default UseStateBasics;
-
-import React from 'react';
-import { data } from '../../../data';
-
-const UseStateArray = () => {
-  return <h2>useState array example</h2>;
-};
-
-export default UseStateArray;
-
-import React, { useState } from 'react';
-
-const UseStateObject = () => {
-  return <h2>useState object example</h2>;
-};
-
-export default UseStateObject;
-
-import React, { useState } from 'react';
-
-const UseStateCounter = () => {
-  return <h2>useState counter example</h2>;
-};
-
-export default UseStateCounter;
